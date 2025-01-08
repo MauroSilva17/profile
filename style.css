@@ -1,0 +1,98 @@
+    /* General container styles */
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Card styles */
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Image styles */
+    .img-circle {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* Button styles */
+    .btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+    /* Link styles */
+    .link {
+      color: #e74c3c;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+      color: #c0392b;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 960px) {
+      .container {
+        width: 700px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: 500px;
+      }
+
+      .img-circle {
+        height: 120px;
+        width: 120px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .container {
+        width: 300px;
+      }
+
+      .img-circle {
+        height: 100px;
+        width: 100px;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+
+      .link {
+        font-size: 0.9rem;
+      }
+    }
